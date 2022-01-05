@@ -1,45 +1,53 @@
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   background-color: rgb(44, 41, 38);
-  color: rgb(255, 133, 51);
-  font-family: "Open Sans", sans-serif;
 }
 
-header {
-  display: flex;
-  height: 80px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
-  background-color: rgb(29, 26, 24);
-}
-
-header ul {
-  display: flex;
-  list-style: none;
-}
-
-header a {
+a {
   text-decoration: none;
-  color: inherit;
-  font-size: 16px;
-  margin: 0 10px;
 }
 
-header a:hover {
-  color:rgb(255, 165, 106) ;
+#main-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 20px;
 }
 
-#home-button {
-  font-size: 20px;
-  text-transform: uppercase;
+#logo {
+  font-size: 24px;
   font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
 }
 
-h1 {
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin: 0 16px;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 20px;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+
+main h1 {
   text-align: center;
-  margin: 20px 0 40px 0;
-  font-size: 45px;
+  color: rgb(238, 164, 80);
+  font-size: 48px;
 }
 
 #latest-products {
@@ -47,46 +55,38 @@ h1 {
   margin: 50px auto;
 }
 
-#highlights {
+#latest-products ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0;
   gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  background-color: white;
+.food-item {
+  background-color: rgb(228, 206, 182);
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  margin: 0px 15px;
-  padding-bottom: 15px;
 }
 
-.card-container img {
+.food-item img {
   height: 240px;
   width: 100%;
   object-fit: cover;
 }
 
-.card-container h3 {
-  font-size: 25px;
-  font-weight: bold;
-  color: rgb(64, 64, 64);
+.food-item-content {
+  padding: 16px;
+  text-align: center;
 }
 
-.card-container a {
-  text-decoration: none;
-  padding: 10px 20px;
+.btn {
+  background-color: rgb(228, 157, 44);
   color: white;
-  background-color: rgb(255, 133, 51);
   border-radius: 4px;
+  padding: 8px 24px;
 }
 
-.card-container a:hover {
-  background-color: rgb(255, 151, 82);
+.btn:hover {
+  background-color: rgb(221, 134, 34);
 }
