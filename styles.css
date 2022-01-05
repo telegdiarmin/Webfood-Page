@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+  color: rgb(255, 133, 51);
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: rgb(29, 26, 24);
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+header a:hover {
+  color:rgb(255, 165, 106) ;
+}
+
+#home-button {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0 40px 0;
+  font-size: 45px;
+}
+
+#latest-products {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  gap: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0px 15px;
+  padding-bottom: 15px;
+}
+
+.card-container img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-container h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(64, 64, 64);
+}
+
+.card-container a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(255, 133, 51);
+  border-radius: 4px;
+}
+
+.card-container a:hover {
+  background-color: rgb(255, 151, 82);
+}
